@@ -1,0 +1,14 @@
+
+/**
+ * Contact 
+ */
+
+.contact > ul > li {
+	margin-bottom: 8px;
+}
+
+.contact > ul > li > span {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	display: inline-block;
+}

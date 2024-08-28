@@ -1,0 +1,76 @@
+
+body { 
+	/*font-family: 'Times New Roman', Times, serif;*/
+	/*font-family: Trebuchet MS;*/
+	font-family: 'Tahoma', 'Noto Sans', 'Liberation Sans', sans-serif;
+	color: #212121;
+	/*font-size: 14px;*/
+	font-size: 100%;
+	line-height: 1.6;
+}
+
+body.sticky-footer {
+	display: flex; 
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #212121;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:link, a:visited {}
+
+a.button,
+a.outline-button {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+  		font-size: 1.8em;
+	}
+}
+
+
+/** 
+ * Content 
+ */
+ 
+body > .content {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	margin-bottom: 160px;
+}
+
+body > .content > * {
+	max-width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+
+/** 
+ * Tabs 
+ */
+
+body > .content > .tabs {
+	margin-bottom: 48px;
+}

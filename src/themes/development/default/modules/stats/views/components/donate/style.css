@@ -1,0 +1,53 @@
+
+/**
+ * Donate
+ */
+ 
+body > .content.donate > ul > li {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	min-height: 40px;
+	margin-bottom: 8px;
+}
+
+body > .content.donate > ul > li > a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+/*
+body > .content.donate > ul > li .name {
+	font-weight: 600;
+}
+*/
+
+body > .content.donate > ul > li .qrcode {
+	word-break: break-all;
+}
+
+/* Dialog */
+
+.dialog.donate.qrcode {
+	width: 320px;
+}
+
+.dialog.donate.qrcode .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dialog.donate.qrcode .address {
+	word-break: break-all;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+	body > .content.donate > ul > li {
+		margin-bottom: 32px;
+	}
+}

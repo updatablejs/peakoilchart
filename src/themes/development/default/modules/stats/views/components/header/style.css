@@ -1,0 +1,46 @@
+
+/** 
+ * Header 
+ */
+
+body > .header {
+	display: flex;
+	gap: 32px;
+	align-items: center; 
+	position: relative;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-right: 2%;
+	padding-left: 2%;
+	margin-bottom: 64px;
+}
+
+@media only screen and (max-width: 1096px) {
+	body > .header {
+		margin-bottom: 2%;
+	}
+}
+
+body > .header > .search {
+	margin-left: auto;
+	margin-right: -16px;
+}
+
+body > .header > .search.opened {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+body > .header .donate {}
+
+/* Logo */
+
+body > .header .logo {}
+
+body > .header .logo a {
+	font-size: 1.4em;
+	color: #000000;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: lowercase;
+}

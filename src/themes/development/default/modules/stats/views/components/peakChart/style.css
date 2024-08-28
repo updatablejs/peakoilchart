@@ -1,0 +1,50 @@
+
+/**
+ * Peak Chart
+ */
+
+.peak-chart select.category {
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+
+.peak-chart .info > ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.peak-chart .info li {
+	line-height: 2;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.peak-chart .info .title {
+	font-size: 0.9em;
+	padding-bottom: 8px;
+}
+
+.peak-chart .info .placeholder {
+	margin-bottom: 16px;
+	height: 1.2em;
+}
+
+.peak-chart .info .text-primary-3 > .placeholder {
+	width: 72%;
+}
+
+.peak-chart .info .decline {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.peak-chart .info .decline ul {
+	display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+	.peak-chart .info .decline {
+		margin-top: 32px;
+		width: 100%;
+	}
+}

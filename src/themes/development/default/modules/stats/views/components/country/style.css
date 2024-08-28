@@ -1,0 +1,48 @@
+
+/**
+ * Country
+ */
+
+body > .country > .header {
+	display: flex;
+	align-items: center;
+}
+
+body > .country > .header .fflag {
+	min-width: 24px;
+	min-height: 24px;
+	margin-left: 8px;
+}
+
+body > .country > .header h1 {
+	margin-left: 8px;
+}
+
+body > .country > .info {
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+
+/**
+ * Chart 
+ */
+
+body > .country .chart {
+	max-width: 860px;
+	height: 640px;
+}
+
+@media only screen and (max-width: 768px) {
+	body > .country .chart {
+		height: 600px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body > .country .chart {
+		height: 520px;
+	}
+}

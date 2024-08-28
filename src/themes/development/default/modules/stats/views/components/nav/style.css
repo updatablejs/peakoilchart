@@ -1,0 +1,115 @@
+
+/**
+ * Nav
+ */
+
+body > .header .nav {}
+
+body > .header .nav li > a {
+	color: #000000;
+}
+
+body > .header .nav li > a.image-right {
+	background-position: right 5px center !important; 
+	background-size: 1.2em 1.2em !important; 
+	padding-right: calc(1.2em + 10px) !important; 
+}
+
+body > .header .nav .structure > ul {
+	display: flex;
+	gap: 8px;
+}
+
+body > .header .nav .structure > ul > li {}
+
+/* In order not to change the style of the buttons, the component can be made resize aware and when the page size changes, 
+	update the component and change the button class {underline or non underline} */
+body > .header .nav .structure > ul > li > a {
+	display: block;
+	border-bottom: 1px solid transparent;
+	border-radius: 0;
+	white-space: nowrap;
+}
+
+body > .header .nav .structure > ul > li > a.active {
+	border-bottom: 1px solid #212121;
+}
+
+body > .header .nav .structure > ul > li > a:hover, 
+body > .header .nav .structure > ul > li > a:active {
+	background-color: transparent;
+}
+
+body > .header .nav .overlay {
+	position: fixed;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+body > .header .nav button.close {
+	display: none;
+	margin-bottom: 24px;
+}
+
+body > .header .hamburger {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	body > .header .nav > .content {
+		display: none;
+		position: fixed;
+		z-index: 9999;
+		left: 0;
+		right: 30%;
+		top: 0;
+		bottom: 0;
+		background-color: #ffffff;
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		overflow: auto;
+	}
+	
+	body > .header .nav.opened > .content, 
+	body > .header .nav.opened .overlay,
+	body > .header .nav button.close, 
+	body > .header .hamburger {
+		display: block;
+	}
+
+	body > .header .nav .structure > ul {
+		flex-direction: column;
+	}
+
+	body > .header .nav .structure > ul > li {}
+
+	body > .header .nav .structure > ul > li > a {
+		border-radius: 3px;
+	}
+
+	body > .header .nav .structure > ul > li > a.active {
+		border-bottom: none;
+	}
+
+	body > .header .nav .structure > ul > li > a.active,
+	body > .header .nav .structure > ul > li > a:hover {
+		background-color: #eeeeee;
+	}
+	
+	body > .header .nav .structure > ul > li > a:active {
+		background-color: #E0E0E0;
+	}
+
+	body > .header .nav .structure .content {
+		position: static;
+		background-color: transparent;
+		box-shadow: none;
+		padding-left: 24px;
+	}
+	
+	body > .header .nav li > a {
+		display: inline-block;
+	}
+}

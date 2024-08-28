@@ -1,0 +1,45 @@
+
+/**
+ * Footer
+ */
+
+body > .footer {
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 0.9em;
+	padding-top: 16px;
+	padding-bottom: 24px;
+	padding-right: 24px;
+	padding-left: 24px;
+	border-top: 1px solid #eeeeee;
+    margin-right: 10%;
+    margin-left: 10%;
+	margin-top: 240px;
+	margin-bottom: 56px;
+}
+
+body.sticky-footer > .footer {
+	margin-top: auto;
+}
+
+body > .footer > .content > * {
+	margin-bottom: 16px;
+}
+
+body > .footer .logo {}
+
+body > .footer .logo img {
+    vertical-align: middle;
+}
+
+body > .footer .social {
+	display: flex;
+	margin-left: auto; 
+	gap: 16px;
+}
+
+body > .footer .legal {
+	display: flex;
+	gap: 16px;
+}

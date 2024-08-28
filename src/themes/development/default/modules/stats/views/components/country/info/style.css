@@ -1,0 +1,32 @@
+
+/**
+ * Info 
+ */
+
+body > .country table.info * {
+	white-space: nowrap;
+}
+
+body > .country table.info .name {
+	white-space: normal;
+}
+
+@media only screen and (max-width: 1096px) {
+	body > .country table.info .y1,
+	body > .country table.info .y10 {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body > .country table.info .date,
+	body > .country table.info .per-capita {
+		display: none;
+	}
+} 
+
+@media only screen and (max-width: 600px) {
+	body > .country table.info .world-share {
+		display: none;
+	}
+}

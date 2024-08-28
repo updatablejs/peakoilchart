@@ -1,0 +1,546 @@
+/** themes/default/modules/stats/views/components/category/entriesTable/style.css */
+/**
+ * Entries
+ */
+
+.entries table {
+	width: 100%;
+}
+
+.entries table td.rank {
+	color: #616161;
+}
+
+.entries table td.name {
+	max-width : 160px;
+	white-space: nowrap;
+	font-weight: 600;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+}
+
+.entries table td.date {
+	white-space: nowrap;
+}
+
+.entries table td.name:hover {
+	overflow: visible;
+}
+
+.entries table .fflag {
+	margin-right: 8px;
+}
+
+.entries table td.value {
+	font-weight: 600;
+}
+
+.entries table td.y1,
+.entries table td.y10 {
+	white-space: nowrap;
+}
+
+.entries table .placeholder {
+	height: 16px;
+}
+
+.entries table td._sparkline {
+	width: 150px;
+	height: 70px;
+	box-sizing: content-box;
+}
+
+.entries .showAll {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 16px;
+}
+
+/*.entries._overlay:before {
+	background-color: #ffffff;
+}*/
+
+@media only screen and (max-width: 992px) {
+	.entries table th, 
+	.entries table td {
+		padding-right: 8px;
+		padding-left: 8px;
+	}
+	
+	.entries table .date, 
+	.entries table .y1,
+	.entries table .per-capacity {
+		display: none;
+	}
+} 
+
+@media only screen and (max-width: 768px) {
+	.entries table td.name {
+		max-width : 120px;
+	}
+	
+	.entries table .per-capita {
+		display: none;
+	}
+} 
+
+@media only screen and (max-width: 600px) {
+	.entries table td.name {
+		max-width : 80px;
+	}
+	
+	.entries table th, 
+	.entries table td {
+		padding-right: 3px;
+		padding-left: 3px;
+	}
+	
+	.entries table .world-share {
+		display: none;
+	}
+	
+	.entries table td._sparkline, 
+	.entries table td._sparkline canvas {
+		width: 120px !important;
+		height: 60px !important;
+	}
+}
+/** themes/default/modules/stats/views/components/category/style.css */
+/**
+ * Category 
+ */
+ 
+.category > .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 16px;
+}
+
+.category > .header .date {
+	font-size: 0.9em;
+	color: #616161;
+}
+/** themes/default/modules/stats/views/components/country/info/style.css */
+/**
+ * Info 
+ */
+
+body > .country table.info * {
+	white-space: nowrap;
+}
+
+body > .country table.info .name {
+	white-space: normal;
+}
+
+@media only screen and (max-width: 1096px) {
+	body > .country table.info .y1,
+	body > .country table.info .y10 {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body > .country table.info .date,
+	body > .country table.info .per-capita {
+		display: none;
+	}
+} 
+
+@media only screen and (max-width: 600px) {
+	body > .country table.info .world-share {
+		display: none;
+	}
+}
+/** themes/default/modules/stats/views/components/country/style.css */
+/**
+ * Country
+ */
+
+body > .country > .header {
+	display: flex;
+	align-items: center;
+}
+
+body > .country > .header .fflag {
+	min-width: 24px;
+	min-height: 24px;
+	margin-left: 8px;
+}
+
+body > .country > .header h1 {
+	margin-left: 8px;
+}
+
+body > .country > .info {
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+
+/**
+ * Chart 
+ */
+
+body > .country .chart {
+	max-width: 860px;
+	height: 640px;
+}
+
+@media only screen and (max-width: 768px) {
+	body > .country .chart {
+		height: 600px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body > .country .chart {
+		height: 520px;
+	}
+}
+/** themes/default/modules/stats/views/components/donate/style.css */
+/**
+ * Donate
+ */
+ 
+body > .content.donate > ul > li {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	min-height: 40px;
+	margin-bottom: 8px;
+}
+
+body > .content.donate > ul > li > a {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+/*
+body > .content.donate > ul > li .name {
+	font-weight: 600;
+}
+*/
+
+body > .content.donate > ul > li .qrcode {
+	word-break: break-all;
+}
+
+/* Dialog */
+
+.dialog.donate.qrcode {
+	width: 320px;
+}
+
+.dialog.donate.qrcode .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dialog.donate.qrcode .address {
+	word-break: break-all;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+	body > .content.donate > ul > li {
+		margin-bottom: 32px;
+	}
+}
+/** themes/default/modules/stats/views/components/footer/style.css */
+/**
+ * Footer
+ */
+
+body > .footer {
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 0.9em;
+	padding-top: 16px;
+	padding-bottom: 24px;
+	padding-right: 24px;
+	padding-left: 24px;
+	border-top: 1px solid #eeeeee;
+    margin-right: 10%;
+    margin-left: 10%;
+	margin-top: 240px;
+	margin-bottom: 56px;
+}
+
+body.sticky-footer > .footer {
+	margin-top: auto;
+}
+
+body > .footer > .content > * {
+	margin-bottom: 16px;
+}
+
+body > .footer .logo {}
+
+body > .footer .logo img {
+    vertical-align: middle;
+}
+
+body > .footer .social {
+	display: flex;
+	margin-left: auto; 
+	gap: 16px;
+}
+
+body > .footer .legal {
+	display: flex;
+	gap: 16px;
+}
+/** themes/default/modules/stats/views/components/header/style.css */
+/** 
+ * Header 
+ */
+
+body > .header {
+	display: flex;
+	gap: 32px;
+	align-items: center; 
+	position: relative;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-right: 2%;
+	padding-left: 2%;
+	margin-bottom: 64px;
+}
+
+@media only screen and (max-width: 1096px) {
+	body > .header {
+		margin-bottom: 2%;
+	}
+}
+
+body > .header > .search {
+	margin-left: auto;
+	margin-right: -16px;
+}
+
+body > .header > .search.opened {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+body > .header .donate {}
+
+/* Logo */
+
+body > .header .logo {}
+
+body > .header .logo a {
+	font-size: 1.4em;
+	color: #000000;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+/** themes/default/modules/stats/views/components/main/style.css */
+/**
+ * Main
+ */
+
+.content.main .cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+}
+/** themes/default/modules/stats/views/components/nav/style.css */
+/**
+ * Nav
+ */
+
+body > .header .nav {}
+
+body > .header .nav li > a {
+	color: #000000;
+}
+
+body > .header .nav li > a.image-right {
+	background-position: right 5px center !important; 
+	background-size: 1.2em 1.2em !important; 
+	padding-right: calc(1.2em + 10px) !important; 
+}
+
+body > .header .nav .structure > ul {
+	display: flex;
+	gap: 8px;
+}
+
+body > .header .nav .structure > ul > li {}
+
+/* In order not to change the style of the buttons, the component can be made resize aware and when the page size changes, 
+	update the component and change the button class {underline or non underline} */
+body > .header .nav .structure > ul > li > a {
+	display: block;
+	border-bottom: 1px solid transparent;
+	border-radius: 0;
+	white-space: nowrap;
+}
+
+body > .header .nav .structure > ul > li > a.active {
+	border-bottom: 1px solid #212121;
+}
+
+body > .header .nav .structure > ul > li > a:hover, 
+body > .header .nav .structure > ul > li > a:active {
+	background-color: transparent;
+}
+
+body > .header .nav .overlay {
+	position: fixed;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+body > .header .nav button.close {
+	display: none;
+	margin-bottom: 24px;
+}
+
+body > .header .hamburger {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	body > .header .nav > .content {
+		display: none;
+		position: fixed;
+		z-index: 9999;
+		left: 0;
+		right: 30%;
+		top: 0;
+		bottom: 0;
+		background-color: #ffffff;
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		overflow: auto;
+	}
+	
+	body > .header .nav.opened > .content, 
+	body > .header .nav.opened .overlay,
+	body > .header .nav button.close, 
+	body > .header .hamburger {
+		display: block;
+	}
+
+	body > .header .nav .structure > ul {
+		flex-direction: column;
+	}
+
+	body > .header .nav .structure > ul > li {}
+
+	body > .header .nav .structure > ul > li > a {
+		border-radius: 3px;
+	}
+
+	body > .header .nav .structure > ul > li > a.active {
+		border-bottom: none;
+	}
+
+	body > .header .nav .structure > ul > li > a.active,
+	body > .header .nav .structure > ul > li > a:hover {
+		background-color: #eeeeee;
+	}
+	
+	body > .header .nav .structure > ul > li > a:active {
+		background-color: #E0E0E0;
+	}
+
+	body > .header .nav .structure .content {
+		position: static;
+		background-color: transparent;
+		box-shadow: none;
+		padding-left: 24px;
+	}
+	
+	body > .header .nav li > a {
+		display: inline-block;
+	}
+}
+/** themes/default/modules/stats/views/components/peakChart/style.css */
+/**
+ * Peak Chart
+ */
+
+.peak-chart select.category {
+	margin-top: 16px;
+	margin-bottom: 32px;
+}
+
+.peak-chart .info > ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.peak-chart .info li {
+	line-height: 2;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.peak-chart .info .title {
+	font-size: 0.9em;
+	padding-bottom: 8px;
+}
+
+.peak-chart .info .placeholder {
+	margin-bottom: 16px;
+	height: 1.2em;
+}
+
+.peak-chart .info .text-primary-3 > .placeholder {
+	width: 72%;
+}
+
+.peak-chart .info .decline {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.peak-chart .info .decline ul {
+	display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+	.peak-chart .info .decline {
+		margin-top: 32px;
+		width: 100%;
+	}
+}
+/** themes/default/modules/stats/views/components/sparkline/style.css */
+/**
+ * Sparkline
+ */
+
+.jqstooltip {
+	width: auto !important;
+	height: auto !important;
+	border-style: none !important;
+	border-radius: 2px !important;
+	padding: 8px !important;
+	font-size: 0.8em !important;
+}
+
+.jqsfield {}
+
+.sparkline-tooltip {
+	font-weight: 600;
+}
+
+.sparkline-tooltip .date {
+	color: #e0e0e0;
+	margin-bottom: 3px;
+}
